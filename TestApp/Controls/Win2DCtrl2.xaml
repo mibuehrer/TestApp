@@ -1,0 +1,19 @@
+﻿<UserControl
+    x:Class="TestApp.Controls.Win2DCtrl2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestApp.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:xaml="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    Unloaded="UserControl_Unloaded"
+    x:Name="thisCtrl"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <TextBox Text="TextBox: " />
+            <TextBox Text="{Binding ElementName=thisCtrl,Path=Label}" />
+        </StackPanel>
+        <xaml:CanvasControl x:Name="Canvas" Draw="Canvas_Draw" Height="40"/>
+    </StackPanel>
+</UserControl>
