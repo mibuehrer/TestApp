@@ -12,11 +12,11 @@
 
     <Grid  Height="400">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="300"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Orientation="Vertical">
-            <TextBlock Text="2 TextBlocks" />
+            <TextBlock Text="Two TextBlocks" />
                 <ListView ItemsSource="{x:Bind ViewModel.Items,Mode=OneWay}" Height="300">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="vm:ModelItem">
